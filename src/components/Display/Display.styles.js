@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const DisplayBase = styled.div`
-    height: 20vh;
+    height: 100%;
     width: 100%;
     background-color: #000;
     display: flex;
     justify-content: flex-end;
-    padding: 0.5rem 0;
     align-items: center;
 `;
 

@@ -2,32 +2,28 @@ import { GlobalStyle } from './globalStyle';
 import Display from './components/Display';
 import Button from './components/Button';
 import { GridButtonsContainer } from './components/GridButtonsContainer';
+import { Layout } from './layouts/main.styles'
+
 function App() {
+
+  const buttonsLayout = [
+    "7","8","9","÷",
+    "4","5","6","*",
+    "1","2","3","-",
+    "C","0","=","+",
+  ]
 
   return (
     <>
     <GlobalStyle />
-      <div>
+      <Layout>
         <Display />
         <GridButtonsContainer>
-          <Button char="Mateus" />
-          <Button char="é" />
-          <Button char="Bicha" />
-          <Button char="0" />
-          <Button char="7" />
-          <Button char="8" />
-          <Button char="9" />
-          <Button char="x" />
-          <Button char="4" />
-          <Button char="5" />
-          <Button char="6" />
-          <Button char="-" />
-          <Button char="1" />
-          <Button char="2" />
-          <Button char="3" />
-          <Button char="+" />
+          {buttonsLayout.map((button,index) => 
+          <Button key={index} char={button} />
+          )}
         </GridButtonsContainer>
-      </div>
+      </Layout>
     </>
   );
 }

@@ -7,6 +7,11 @@ export const ButtonBase = styled.button`
     justify-content: center;
     align-items: center;
     border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
 `;
 
 ButtonBase.Text = styled.p`
