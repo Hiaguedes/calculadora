@@ -1,8 +1,8 @@
 import React from 'react';
 import { ButtonBase } from './Button.styles';
-const Button = ({char}) => {
+const Button = ({char, onClick}) => {
     return (
-        <ButtonBase>
+        <ButtonBase onClick={onClick}>
             <ButtonBase.Text>{char}</ButtonBase.Text>
         </ButtonBase>
     );

@@ -1,9 +1,9 @@
 import { DisplayBase } from './Display.styles';
 
-const Display = () => {
+const Display = ({exp}) => {
     return (
         <DisplayBase>
-            <DisplayBase.Result>0</DisplayBase.Result>
+            <DisplayBase.Result>{exp}</DisplayBase.Result>
         </DisplayBase>
     );
 }
